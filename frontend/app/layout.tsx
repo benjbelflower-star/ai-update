@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   title: "AI Update",
   description: "Your personal AI learning and investment digest",
   manifest: "/manifest.json",
-  appleWebApp: { capable: true, statusBarStyle: "black-translucent", title: "AI Update" },
+  appleWebApp: { capable: true, statusBarStyle: "default", title: "AI Update" },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6366f1",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -28,7 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="bg-bg text-primary font-sans">
-        <main className="max-w-2xl mx-auto px-4 pb-28 pt-6 min-h-dvh">
+        {/* Signature brand bar — 2px gradient across the top */}
+        <div
+          className="fixed top-0 left-0 right-0 h-[2px] z-50"
+          style={{ background: "linear-gradient(90deg, #4f46e5 0%, #d97706 50%, #059669 100%)" }}
+        />
+        <main className="max-w-2xl mx-auto px-4 pb-28 pt-7 min-h-dvh">
           {children}
         </main>
         <Navigation />

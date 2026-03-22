@@ -7,47 +7,47 @@
 
   html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 
-  body { background-color: #0a0a0f; color: #e2e8f0; min-height: 100dvh; }
+  body { background-color: #f5f7fa; color: #0f172a; }
 
-  ::selection { background-color: #6366f1; color: #fff; }
+  ::selection { background-color: #4f46e5; color: #fff; }
 
   ::-webkit-scrollbar { width: 4px; height: 4px; }
   ::-webkit-scrollbar-track { background: transparent; }
-  ::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 2px; }
-  ::-webkit-scrollbar-thumb:hover { background: #252538; }
+  ::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: #cbd5e1; }
 }
 
 @layer components {
-  /* ── Cards ───────────────────────────────────────────────────── */
+  /* ── Cards ──────────────────────────────────────────────────────── */
   .card {
-    @apply bg-surface border border-border rounded-2xl;
+    @apply bg-white border border-border/60 rounded-2xl shadow-card;
   }
 
-  /* Accent-specific hover — static strings so Tailwind detects them */
-  .card-learn  { @apply hover:border-learn/40  transition-all duration-200; }
-  .card-invest { @apply hover:border-invest/40 transition-all duration-200; }
+  .card-learn  { @apply hover:border-learn/30  hover:shadow-card-lg transition-all duration-200; }
+  .card-invest { @apply hover:border-invest/30 hover:shadow-card-lg transition-all duration-200; }
 
-  /* ── Pills ───────────────────────────────────────────────────── */
+  /* ── Pills ──────────────────────────────────────────────────────── */
   .pill {
-    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
   }
 
-  .pill-learn  { @apply bg-learn/15  text-learn  border border-learn/25; }
-  .pill-invest { @apply bg-invest/15 text-invest border border-invest/25; }
-  .pill-dim    { @apply bg-border    text-dim; }
+  .pill-learn  { @apply bg-learn-dim  text-learn; }
+  .pill-invest { @apply bg-invest-dim text-invest; }
+  .pill-dim    { @apply bg-surface-2  text-dim; }
 
-  /* ── Buttons ─────────────────────────────────────────────────── */
+  /* ── Buttons ────────────────────────────────────────────────────── */
   .btn-ghost {
-    @apply text-dim border border-border rounded-xl px-3 py-2 text-xs font-medium
-           hover:border-primary/30 hover:text-primary transition-all duration-150 active:scale-95;
+    @apply text-dim border border-border bg-white rounded-xl px-3 py-2 text-xs font-medium
+           hover:border-primary/20 hover:text-primary hover:bg-surface-2
+           shadow-sm transition-all duration-150 active:scale-95;
   }
 
-  /* ── Insight callout ─────────────────────────────────────────── */
+  /* ── Insight callout ────────────────────────────────────────────── */
   .insight-callout {
-    @apply border-l-[3px] border-accent bg-accent/10 pl-4 pr-3 py-3.5 rounded-r-xl;
+    @apply border-l-[3px] border-accent bg-amber-50 pl-4 pr-3 py-3.5 rounded-r-xl;
   }
 
-  /* ── Section divider ─────────────────────────────────────────── */
+  /* ── Section divider ────────────────────────────────────────────── */
   .section-divider {
     @apply mt-10 flex items-center gap-3;
   }
@@ -55,7 +55,7 @@
   .section-divider::before,
   .section-divider::after {
     content: '';
-    @apply flex-1 h-px bg-border/50;
+    @apply flex-1 h-px bg-border;
   }
 }
 
