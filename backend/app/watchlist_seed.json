@@ -1,0 +1,22 @@
+[
+  {"name": "NVIDIA",           "ticker": "NVDA",  "category": "infrastructure",  "score": 10.0},
+  {"name": "Microsoft",        "ticker": "MSFT",  "category": "platform",        "score": 9.5},
+  {"name": "Google DeepMind",  "ticker": "GOOGL", "category": "platform",        "score": 9.5},
+  {"name": "Meta AI",          "ticker": "META",  "category": "platform",        "score": 9.0},
+  {"name": "Amazon AWS",       "ticker": "AMZN",  "category": "infrastructure",  "score": 9.0},
+  {"name": "OpenAI",           "ticker": null,    "category": "frontier_lab",    "score": 10.0},
+  {"name": "Anthropic",        "ticker": null,    "category": "frontier_lab",    "score": 10.0},
+  {"name": "xAI",              "ticker": null,    "category": "frontier_lab",    "score": 9.0},
+  {"name": "Mistral AI",       "ticker": null,    "category": "frontier_lab",    "score": 8.5},
+  {"name": "Apple",            "ticker": "AAPL",  "category": "platform",        "score": 8.5},
+  {"name": "AMD",              "ticker": "AMD",   "category": "infrastructure",  "score": 8.5},
+  {"name": "Palantir",         "ticker": "PLTR",  "category": "enterprise",      "score": 8.0},
+  {"name": "Scale AI",         "ticker": null,    "category": "data",            "score": 8.5},
+  {"name": "Perplexity",       "ticker": null,    "category": "product",         "score": 8.0},
+  {"name": "CoreWeave",        "ticker": "CRWV",  "category": "infrastructure",  "score": 8.0},
+  {"name": "Cerebras",         "ticker": "CBRS",  "category": "infrastructure",  "score": 7.5},
+  {"name": "Cohere",           "ticker": null,    "category": "enterprise",      "score": 7.5},
+  {"name": "Stability AI",     "ticker": null,    "category": "product",         "score": 7.0},
+  {"name": "Intel",            "ticker": "INTC",  "category": "infrastructure",  "score": 7.5},
+  {"name": "Salesforce",       "ticker": "CRM",   "category": "enterprise",      "score": 7.5}
+]

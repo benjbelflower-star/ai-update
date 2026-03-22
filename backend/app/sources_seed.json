@@ -1,0 +1,22 @@
+[
+  {"name": "arXiv CS.AI",         "url": "http://export.arxiv.org/rss/cs.AI",                                                              "type": "learn",  "score": 9.5},
+  {"name": "arXiv CS.LG",         "url": "http://export.arxiv.org/rss/cs.LG",                                                              "type": "learn",  "score": 9.5},
+  {"name": "Hugging Face Blog",   "url": "https://huggingface.co/blog/feed.xml",                                                            "type": "learn",  "score": 9.5},
+  {"name": "MIT Tech Review AI",  "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",                             "type": "both",   "score": 9.0},
+  {"name": "Hacker News",         "url": "https://news.ycombinator.com/rss",                                                                "type": "both",   "score": 8.5},
+  {"name": "TechCrunch AI",       "url": "https://techcrunch.com/category/artificial-intelligence/feed/",                                   "type": "invest", "score": 9.0},
+  {"name": "TechCrunch Startups", "url": "https://techcrunch.com/category/startups/feed/",                                                  "type": "invest", "score": 8.5},
+  {"name": "VentureBeat AI",      "url": "https://venturebeat.com/category/ai/feed/",                                                       "type": "both",   "score": 8.5},
+  {"name": "The Verge AI",        "url": "https://www.theverge.com/ai-artificial-intelligence/rss/index.xml",                               "type": "both",   "score": 8.0},
+  {"name": "Wired AI",            "url": "https://www.wired.com/feed/tag/ai/latest/rss",                                                    "type": "both",   "score": 8.0},
+  {"name": "IEEE Spectrum AI",    "url": "https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss",                               "type": "learn",  "score": 8.5},
+  {"name": "AI News",             "url": "https://www.artificialintelligence-news.com/feed/",                                               "type": "both",   "score": 7.5},
+  {"name": "Reddit r/ML",         "url": "https://www.reddit.com/r/MachineLearning/.rss",                                                   "type": "learn",  "score": 8.0},
+  {"name": "Reddit r/artificial", "url": "https://www.reddit.com/r/artificial/.rss",                                                        "type": "both",   "score": 7.0},
+  {"name": "Google News AI",      "url": "https://news.google.com/rss/search?q=artificial+intelligence&hl=en-US&gl=US&ceid=US:en",         "type": "both",   "score": 8.0},
+  {"name": "Google News AI Fund", "url": "https://news.google.com/rss/search?q=AI+funding+investment&hl=en-US&gl=US&ceid=US:en",           "type": "invest", "score": 8.5},
+  {"name": "Google News AI M&A",  "url": "https://news.google.com/rss/search?q=AI+acquisition+merger&hl=en-US&gl=US&ceid=US:en",           "type": "invest", "score": 8.5},
+  {"name": "Reuters Technology",  "url": "https://feeds.reuters.com/reuters/technologyNews",                                                "type": "invest", "score": 8.5},
+  {"name": "Fortune Technology",  "url": "https://fortune.com/section/technology/feed/",                                                    "type": "invest", "score": 8.0},
+  {"name": "Ars Technica",        "url": "https://feeds.arstechnica.com/arstechnica/index",                                                 "type": "both",   "score": 8.0}
+]

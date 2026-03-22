@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+  body { background-color: #0a0a0f; color: #e2e8f0; min-height: 100dvh; }
+
+  ::selection { background-color: #6366f1; color: #fff; }
+
+  ::-webkit-scrollbar { width: 3px; height: 3px; }
+  ::-webkit-scrollbar-track { background: #13131a; }
+  ::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 2px; }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-2xl;
+  }
+
+  .pill {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .pill-learn  { @apply bg-learn/15  text-learn  border border-learn/25; }
+  .pill-invest { @apply bg-invest/15 text-invest border border-invest/25; }
+  .pill-dim    { @apply bg-border    text-dim; }
+
+  .btn-ghost {
+    @apply text-dim border border-border rounded-xl px-3 py-2 text-xs font-medium
+           hover:border-primary/30 hover:text-primary transition-all duration-150 active:scale-95;
+  }
+
+  .insight-callout {
+    @apply border-l-2 border-accent bg-accent/5 pl-4 pr-3 py-3 rounded-r-xl;
+  }
+}
+
+/* Hide scrollbar but keep scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

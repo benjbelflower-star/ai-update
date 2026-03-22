@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.env
+
+# Node
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.vercel
+
+# Data (local only — Railway uses mounted volume)
+backend/data/ai_update.db
+backend/data/charts/
+backend/data/audio/
+*.db
+*.db-shm
+*.db-wal
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
