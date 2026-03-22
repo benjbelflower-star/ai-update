@@ -11,16 +11,23 @@
 
   ::selection { background-color: #6366f1; color: #fff; }
 
-  ::-webkit-scrollbar { width: 3px; height: 3px; }
-  ::-webkit-scrollbar-track { background: #13131a; }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: #1e1e2e; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb:hover { background: #252538; }
 }
 
 @layer components {
+  /* ── Cards ───────────────────────────────────────────────────── */
   .card {
     @apply bg-surface border border-border rounded-2xl;
   }
 
+  /* Accent-specific hover — static strings so Tailwind detects them */
+  .card-learn  { @apply hover:border-learn/40  transition-all duration-200; }
+  .card-invest { @apply hover:border-invest/40 transition-all duration-200; }
+
+  /* ── Pills ───────────────────────────────────────────────────── */
   .pill {
     @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
   }
@@ -29,13 +36,26 @@
   .pill-invest { @apply bg-invest/15 text-invest border border-invest/25; }
   .pill-dim    { @apply bg-border    text-dim; }
 
+  /* ── Buttons ─────────────────────────────────────────────────── */
   .btn-ghost {
     @apply text-dim border border-border rounded-xl px-3 py-2 text-xs font-medium
            hover:border-primary/30 hover:text-primary transition-all duration-150 active:scale-95;
   }
 
+  /* ── Insight callout ─────────────────────────────────────────── */
   .insight-callout {
-    @apply border-l-2 border-accent bg-accent/5 pl-4 pr-3 py-3 rounded-r-xl;
+    @apply border-l-[3px] border-accent bg-accent/10 pl-4 pr-3 py-3.5 rounded-r-xl;
+  }
+
+  /* ── Section divider ─────────────────────────────────────────── */
+  .section-divider {
+    @apply mt-10 flex items-center gap-3;
+  }
+
+  .section-divider::before,
+  .section-divider::after {
+    content: '';
+    @apply flex-1 h-px bg-border/50;
   }
 }
 

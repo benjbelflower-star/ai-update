@@ -46,8 +46,8 @@ export default function SearchPage() {
   return (
     <div className="animate-fade-in">
       <header className="mb-6">
-        <h1 className="text-2xl font-bold">Search</h1>
-        <p className="text-muted text-sm mt-0.5">Search across all archived reports</p>
+        <h1 className="text-[26px] font-bold tracking-tight leading-none">Search</h1>
+        <p className="text-muted text-sm mt-1.5">Search across all archived reports</p>
       </header>
 
       {/* Search input */}
@@ -75,10 +75,10 @@ export default function SearchPage() {
           <button
             key={tab.value}
             onClick={() => setType(tab.value)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 ${
+            className={`px-4 py-1.5 rounded-xl text-xs font-semibold transition-all duration-150 ${
               type === tab.value
                 ? "bg-learn text-white"
-                : "bg-surface border border-border text-muted hover:text-dim"
+                : "bg-surface border border-border text-muted hover:text-dim hover:bg-surface-2"
             }`}
           >
             {tab.label}

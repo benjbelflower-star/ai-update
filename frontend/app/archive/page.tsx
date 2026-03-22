@@ -229,8 +229,8 @@ export default function ArchivePage() {
       )}
 
       <header className="mb-6">
-        <h1 className="text-2xl font-bold">Archive</h1>
-        <p className="text-muted text-sm mt-0.5">Every report, forever</p>
+        <h1 className="text-[26px] font-bold tracking-tight leading-none">Archive</h1>
+        <p className="text-muted text-sm mt-1.5">Every report, forever</p>
       </header>
 
       {/* Follow filter banner */}
@@ -257,10 +257,10 @@ export default function ArchivePage() {
               <button
                 key={tab.value}
                 onClick={() => handleTabClick(tab.value)}
-                className={`flex-1 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 ${
+                className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ${
                   active
                     ? "bg-learn text-white"
-                    : "text-muted hover:text-dim hover:bg-border"
+                    : "text-muted hover:text-dim hover:bg-surface-2"
                 }`}
               >
                 {tab.label}
@@ -275,10 +275,10 @@ export default function ArchivePage() {
             <button
               key={tab.value}
               onClick={() => setSort(tab.value)}
-              className={`flex-1 py-1.5 rounded-lg text-xs font-semibold transition-all duration-150 ${
+              className={`flex-1 py-2 rounded-xl text-xs font-semibold transition-all duration-150 ${
                 sort === tab.value
                   ? "bg-learn text-white"
-                  : "text-muted hover:text-dim hover:bg-border"
+                  : "text-muted hover:text-dim hover:bg-surface-2"
               }`}
             >
               {tab.label}
